@@ -12,5 +12,8 @@
 	"dependencies": {
 		"astro": "^2.0.14",
 		"netlify-identity-widget": "^1.9.2"
+	},
+	"devDependencies": {
+		"@types/netlify-identity-widget": "^1.9.3"
 	}
 }

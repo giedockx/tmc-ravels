@@ -1,4 +1,5 @@
 ---
+import netlifyIdentity from 'netlify-identity-widget';
 export interface Props {
 	title: string;
 }
@@ -25,6 +26,11 @@ const { title } = Astro.props;
 		+<a href="/documents">Documenten</a>
 		+<a href="/links">Links</a>
 		+<a href="/members">Ledensectie</a>
+		
+		netlifyIdentity.init();
+		const user = netlifyIdentity.currentUser();
+		console.log(user);
+		
 		<script>
 			if (window.netlifyIdentity) {
 			  window.netlifyIdentity.on("init", user => {
@@ -35,7 +41,7 @@ const { title } = Astro.props;
 				}
 			  });
 			}
-		  </script>
+		</script>
 		  
 	<slot />
 	</body>
