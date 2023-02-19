@@ -1,4 +1,5 @@
 ---
+import Header from "../components/Header.astro";
 export interface Props {
 	title: string;
 }
@@ -17,16 +18,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		+<a href="/">Home</a>
-		+<a href="/about">Wie zijn wij</a>
-		+<a href="/events">Kalender</a>
-		+<a href="/contact">Contact</a>
-		+<a href="/brevetten">Brevetten</a>
-		+<a href="/documents">Documenten</a>
-		+<a href="/links">Links</a>
-		+<a href="/members">Ledensectie</a>
-
-				  
+	<Header/>
 	<slot />
 	<footer/>
 	<script>
@@ -44,12 +36,12 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		--accent: 100, 100, 255;
+		--accent-gradient: linear-gradient(45deg, #7be5ffd2 15%, rgb(var(--accent)) , rgb(255, 255, 255)60%);
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+		background-color: #f6f6f6;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,

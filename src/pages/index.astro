@@ -5,10 +5,11 @@ import Card from '../components/Card.astro';
 
 <Layout title="TMC Ravels | Home">
 	<main>
-		<h1>Welkom bij <span class="text-gradient">TMC Ravels</span></h1>
+		<h1>Welkom op de website van <span class="text-gradient">TMC Ravels</span></h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			Via deze site kunnen jullie op de hoogte blijven van alle <strong><a href="/events">activiteiten</a></strong> en worden <br />
+			er <strong>foto's</strong> gedeeld. Neem zeker een kijkje op onze <strong>links</strong> pagina <br />
+			waar al onze partners worden vermeld..
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -31,6 +32,26 @@ import Card from '../components/Card.astro';
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
+			<Card
+				href="/about"
+				title="Wie zijn wij"
+				body="Ales wat je moet weten over onze club."
+			/>
+			<Card
+				href="/events"
+				title="Evenementen"
+				body="Ontdek hier al onze evenementen."
+			/>
+			<Card
+				href="/members"
+				title="Ledensectie"
+				body="Ben je lid of wil je lid worden? Klik dan hier!"
+			/>
+			<Card
+				href="/brevetten"
+				title="Brevetten"
+				body="Hoe zit dat nu met de brevetten?"
+			/>
 		</ul>
 	</main>
 </Layout>
@@ -39,7 +60,7 @@ import Card from '../components/Card.astro';
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
+		max-width: 80ch;
 	}
 	h1 {
 		font-size: 3rem;
