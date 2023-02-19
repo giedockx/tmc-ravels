@@ -1,5 +1,5 @@
 ---
-layout: layouts/BaseLayout.astro
+layout: ../../layouts/BaseLayout.astro
 pubDate: 2022-07-01
 title: Eerste blogpost
 publishDate: 19 Feb 2023
