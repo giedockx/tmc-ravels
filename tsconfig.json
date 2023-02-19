@@ -1,7 +1,3 @@
 {
-  "include": ["astro.config.mjs"],
-  "extends": "astro/tsconfigs/strict.json",
-  "compilerOptions": {
-    "module": "ES2020"
+  "extends": "astro/tsconfigs/strict"
   }
-}
