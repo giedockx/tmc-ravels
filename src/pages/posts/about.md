@@ -1,13 +1,17 @@
 ---
-layout: ../../layouts/BaseLayout.astro
-title: 'Eerste blogpost'
+layout: layouts/BaseLayout.astro
 pubDate: 2022-07-01
-description: 'Dit is de eerste blogpost over onze club'
-author: 'Gie Dockx'
+title: Eerste blogpost
+publishDate: 19 Feb 2023
+author: Gie Dockx
+tags:
+  - astro
+  - blogging
+  - learning in public
 image:
-    url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
-    alt: 'The Astro logo with the word One.'
-tags: ["astro", "blogging", "learning in public"]
+  url: https://astro.build/assets/blog/astro-1-release-update/cover.jpeg
+  alt: The Astro logo with the word One.
+description: Dit is de eerste blogpost over onze club
 ---
 # Over onze club
 
