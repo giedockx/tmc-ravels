@@ -1,0 +1,113 @@
+---
+
+---
+
+<header>
+  <img src="../content/tmcravelsnaam.png" alt="tmcLogo" class="logo" alt="tmcLogo">
+  <nav>
+    <ul class="nav_links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">Wie zijn wij</a></li>
+      <li><a href="/events">Kalender</a></li>
+      <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Documentatie</a>
+          <div class="dropdown-content">
+            <a href="/brevetten">Brevetten</a>
+            <a href="/documents">Documenten</a>
+          </div>
+        </li>
+      <li><a href="/links">Links</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/members">Ledensectie</a></li>
+    </ul>
+  </nav>
+  <a class="login" href="/members.astro"><button>Log in</button></a>
+  <style>
+
+ul {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.nav_links {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 0px 5px;
+  transition: all 0.3s ease 0s;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  color: rgb(80, 90, 221);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+ 
+</header>
+
