@@ -31,6 +31,17 @@ export default defineConfig({
               { name: 'title', widget: 'string', label: 'Post Title' },
               { name: 'body', widget: 'markdown', label: 'Post Body' },
             ]
+          },
+          {
+            name: 'webPages',
+            label: "Web Pagina's",
+            folder: 'src/pages',
+            create: true,
+            delete: true,
+            fields: [
+              { name: 'title', widget: 'string', label: 'Post Title' },
+              { name: 'body', widget: 'markdown', label: 'Post Body' },
+            ]
           }
         ],
       }
