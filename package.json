@@ -13,7 +13,7 @@
 		"@astrojs/mdx": "^0.17.0",
 		"@astrojs/sitemap": "^1.0.1",
 		"astro": "^2.0.13",
-		"astro-netlify-cms": "^0.0.1",
+		"astro-netlify-cms": "^0.5.3",
 		"netlify-identity-widget": "^1.9.2"
 	},
 	"devDependencies": {
