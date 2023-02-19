@@ -47,10 +47,12 @@ export default defineConfig({
                 default: 'layouts/BaseLayout.astro',
                 options: [
                   { label: 'Blog Post', value: 'layouts/BaseLayout.astro' },
-            ]
-          }
+                ],
+              },
+            ],
+          },
         ],
-      }
+      },
     }),
   ],
 });
