@@ -38,7 +38,6 @@ export default defineConfig({
                 label: 'Publish Date',
               },
               { name: 'author', widget: 'string', label: 'Author Name', required: false },
-              { name: 'authorURL', widget: 'string', label: 'Author URL', required: false },
               { name: 'description', widget: 'string', label: 'Description', required: false },
               { name: 'body', widget: 'markdown', label: 'Post Body' },
               {
