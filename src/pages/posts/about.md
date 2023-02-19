@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BaseLayout.astro
 title: 'Eerste blogpost'
 pubDate: 2022-07-01
 description: 'Dit is de eerste blogpost over onze club'
