@@ -21,7 +21,17 @@ export default defineConfig({
           branch: 'main',
         },
         collections: [
-          // Content collections
+          {
+            name: 'posts',
+            label: 'Blog Posts',
+            folder: 'src/pages/posts',
+            create: true,
+            delete: true,
+            fields: [
+              { name: 'title', widget: 'string', label: 'Post Title' },
+              { name: 'body', widget: 'markdown', label: 'Post Body' },
+            ]
+          }
         ],
       },
   }),
