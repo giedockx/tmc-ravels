@@ -17,15 +17,17 @@ description: Dit is de eerste blogpost over onze club
 
 Published on: 2022-07-01
 
-Op deze blogpost lees alles over onze club. De geschiedenis, leden en zo veel meer.
+Op deze blogpost leest u alles over onze club. De geschiedenis, de leden en zo veel meer.
 
 ### Ons bestuur:
-- Voorzitter: Jef Heyns
-- Ondervoorzitter: Luk Wynants
-- Secretaris: Marc Lenaerts
-- Penningmeester: Peter Hermans
-- Raadslid: Luc Tryssesoone
-- Raadslid: Michel Vervecken
+
+* Voorzitter: Jef Heyns
+* Ondervoorzitter: Luk Wynants
+* Secretaris: Marc Lenaerts
+* Penningmeester: Peter Hermans
+* Raadslid: Luc Tryssesoone
+* Raadslid: Michel Vervecken
 
 ### Geschiedenis van de club
+
 wat tekst hier
