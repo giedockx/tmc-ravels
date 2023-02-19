@@ -2,7 +2,7 @@
 title: wayfarer
 publishDate: 19 Feb 2023
 author: GD
-layout: layouts/BaseLayout.astro
+layout: ../../layouts/BaseLayout.astro
 ---
 # **Wayfarer**
 
