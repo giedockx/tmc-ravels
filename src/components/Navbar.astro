@@ -3,26 +3,28 @@
 ---
 
 <header>
-  <img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/tmclogo.png" alt="tmcLogo" class="logo"/>
-  <nav>
-    <ul class="nav_links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">Wie zijn wij</a></li>
-      <li><a href="/events">Kalender</a></li>
-      <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Documentatie</a>
-          <div class="dropdown-content">
-            <a href="/brevetten">Brevetten</a>
-            <a href="/documents">Documenten</a>
-          </div>
-        </li>
-      <li><a href="/links">Links</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/members">Ledensectie</a></li>
-    </ul>
-  </nav>
-  <a class="login" href="/members.astro"><button>Log in</button></a>
-  <style>
+    <img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/tmclogo.png" alt="tmcLogo" class="logo"/>
+    <nav>
+      <ul class="nav_links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">Wie zijn wij</a></li>
+        <li><a href="/events">Kalender</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Documentatie</a>
+            <div class="dropdown-content">
+              <a href="/brevetten">Brevetten</a>
+              <a href="/documents">Documenten</a>
+            </div>
+          </li>
+        <li><a href="/links">Links</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/members">Ledensectie</a></li>
+      </ul>
+    </nav>
+    <a class="login" href="/members.astro"><button>Log in</button></a>
+</header>
+
+<style>
 
 ul {
   list-style-type: none;
@@ -42,20 +44,20 @@ ul {
 .image-crop img {
   width: 300px; /* dit is de oorspronkelijke grootte van de afbeelding */
   height: 300px;
-  margin-top: -1000px; /* hiermee wordt bepaald welk gedeelte van de afbeelding zichtbaar is */
-  margin-left: -50px;
+  margin-top: 0px; /* hiermee wordt bepaald welk gedeelte van de afbeelding zichtbaar is */
+  margin-left: 0px;
 }
 
 header {
   display: flex;
   justify-content:space-evenly;
   align-items: center;
-  padding: 20px 0%;
-  position: fixed;
+  padding: 0px 0%;
+  position:sticky;
   top:0;
   left:0;
   width:100%;
-  background-color: #ffffff;
+  background-color: #ffffffef;
 }
 
 .logo {
@@ -133,5 +135,5 @@ li.dropdown {
 }
     </style>
  
-</header>
+
 
