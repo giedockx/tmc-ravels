@@ -6,12 +6,12 @@ import Card from '../components/Card.astro';
 <Layout title="TMC Ravels | Home">
 	<main>
 
-		<div class="slideshow" style="max-width:500px">
-			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/funcub_wayfarer.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
-			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/stermotor.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
-			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/djimini2.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
-			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/pikachu.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
-			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/fpvdrone.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
+		<div class="slideshow">
+			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/funcub_wayfarer.jpg" class="mySlides" alt="funcub_wayfarer">
+			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/stermotor.jpg" class="mySlides" alt="funcub_wayfarer">
+			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/djimini2.jpg" class="mySlides" alt="funcub_wayfarer">
+			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/pikachu.jpg" class="mySlides" alt="funcub_wayfarer">
+			<img src="https://raw.githubusercontent.com/giedockx/tmc-ravels/main/src/content/fpvdrone.jpg" class="mySlides" alt="funcub_wayfarer">
 		</div>
 		<script>
 			var myIndex = 0;
@@ -31,45 +31,58 @@ import Card from '../components/Card.astro';
 			  x[myIndex-1].style.display = "block";  
 			  setTimeout(carousel, 5000); // Change image every 2 seconds
 			}
-			</script>
-		
-		<h1>Welkom bij TMC Ravels</h1>
-		<p class="instructions">
-			Via deze site kunnen jullie op de hoogte blijven van alle <strong><a href="/events">activiteiten</a></strong> en worden <br />
-			er <strong>foto's</strong> gedeeld. Neem zeker een kijkje op onze <strong>links</strong> pagina <br />
-			waar al onze partners worden vermeld..
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="/about"
-				title="Wie zijn wij"
-				body="Ales wat je moet weten over onze club."
-			/>
-			<Card
-				href="/events"
-				title="Evenementen"
-				body="Ontdek hier al onze evenementen."
-			/>
-			<Card
-				href="/members"
-				title="Ledensectie"
-				body="Ben je lid of wil je lid worden? Klik dan hier!"
-			/>
-			<Card
-				href="/brevetten"
-				title="Brevetten"
-				body="Hoe zit dat nu met de brevetten?"
-			/>
-		</ul>
+		</script>
+		<div class="indexContent">
+			<h1>Welkom bij TMC Ravels</h1>
+			<p class="instructions">
+				Via deze site kunnen jullie op de hoogte blijven van alle <strong><a href="/events">activiteiten</a></strong> en worden <br />
+				er <strong>foto's</strong> gedeeld. Neem zeker een kijkje op onze <strong>links</strong> pagina <br />
+				waar al onze partners worden vermeld..
+			</p>
+			<ul role="list" class="link-card-grid">
+				<Card
+					href="/about"
+					title="Wie zijn wij"
+					body="Ales wat je moet weten over onze club."
+				/>
+				<Card
+					href="/events"
+					title="Evenementen"
+					body="Ontdek hier al onze evenementen."
+				/>
+				<Card
+					href="/members"
+					title="Ledensectie"
+					body="Ben je lid of wil je lid worden? Klik dan hier!"
+				/>
+				<Card
+					href="/brevetten"
+					title="Brevetten"
+					body="Hoe zit dat nu met de brevetten?"
+				/>
+			</ul>
+		</div>
 	</main>
 </Layout>
 
 <style>
 	
-	main {
+	.mySlides {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+	.mySlides img {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin-top: -100px;
+		margin-bottom: -100px;
+	}
+	.indexContent {
+		padding: 1rem;
+		max-width: 140ch;
 		margin: auto;
-		padding: 1.5rem;
-		max-width: 100ch;
 	}
 	h1 {
 		font-size: 3rem;
