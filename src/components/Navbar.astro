@@ -3,7 +3,7 @@
 ---
 
 <header>
-  <img src="../content/tmclogo.png" alt="tmcLogo" class="logo" alt="tmcLogo"/>
+  <img src="/src/content/tmclogo.png" alt="tmcLogo" class="logo"/>
   <nav>
     <ul class="nav_links">
       <li><a href="/">Home</a></li>
@@ -33,12 +33,29 @@ ul {
 
 }
 
+.logo {
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+}
+
+.image-crop img {
+  width: 300px; /* dit is de oorspronkelijke grootte van de afbeelding */
+  height: 300px;
+  margin-top: -1000px; /* hiermee wordt bepaald welk gedeelte van de afbeelding zichtbaar is */
+  margin-left: -50px;
+}
+
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
   align-items: center;
-  padding: 30px 10%;
-
+  padding: 20px 0%;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: #FFFFFF;
 }
 
 .logo {
@@ -47,12 +64,15 @@ header {
 }
 
 button {
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  padding: 15px 35px;
+  background-color:#0D47A1;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  color:#f1f1f1;
+  font-weight: bold;
+  font-size: large;
 }
 
 button:hover {
@@ -61,6 +81,8 @@ button:hover {
 
 .nav_links {
   list-style: none;
+  font-weight: bold;
+  font-size: larger;
 }
 
 li {
@@ -71,14 +93,14 @@ li {
 
 li a, .dropbtn {
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgb(87, 87, 87);
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  color: rgb(80, 90, 221);
+  color: rgb(0, 0, 0);
 }
 
 li.dropdown {

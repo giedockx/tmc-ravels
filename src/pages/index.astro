@@ -5,33 +5,41 @@ import Card from '../components/Card.astro';
 
 <Layout title="TMC Ravels | Home">
 	<main>
-		<h1>Welkom op de website van <span class="text-gradient">TMC Ravels</span></h1>
+
+		<div class="slideshow" style="max-width:500px">
+			<img src="/src/content/funcub_wayfarer.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
+			<img src="/src/content/stermotor.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
+			<img src="/src/content/djimini2.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
+			<img src="/src/content/pikachu.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
+			<img src="/src/content/fpvdrone.jpg" class="mySlides" style="width:100%" alt="funcub_wayfarer">
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+			
+			function plusDivs(n) {
+				showDivs(j += n);
+			}			
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 5000); // Change image every 2 seconds
+			}
+			</script>
+		
+		<h1>Welkom bij TMC Ravels</h1>
 		<p class="instructions">
 			Via deze site kunnen jullie op de hoogte blijven van alle <strong><a href="/events">activiteiten</a></strong> en worden <br />
 			er <strong>foto's</strong> gedeeld. Neem zeker een kijkje op onze <strong>links</strong> pagina <br />
 			waar al onze partners worden vermeld..
 		</p>
 		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
 			<Card
 				href="/about"
 				title="Wie zijn wij"
@@ -57,10 +65,11 @@ import Card from '../components/Card.astro';
 </Layout>
 
 <style>
+	
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 80ch;
+		max-width: 100ch;
 	}
 	h1 {
 		font-size: 3rem;
@@ -79,7 +88,7 @@ import Card from '../components/Card.astro';
 		margin: 1rem 0;
 		border: 1px solid rgba(var(--accent), 25%);
 		background-color: white;
-		padding: 1rem;
+		padding: 2rem;
 		border-radius: 0.4rem;
 	}
 	.instructions code {
@@ -99,4 +108,5 @@ import Card from '../components/Card.astro';
 		gap: 1rem;
 		padding: 0;
 	}
+
 </style>
