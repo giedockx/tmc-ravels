@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+const fs = require("fs");
+const markdownContent = fs.readFileSync("../pages/posts")
 ---
 
 <Layout title="TMC Ravels | Kalender">
@@ -8,6 +9,7 @@ import Card from '../components/Card.astro';
 		<h1>Activiteitenkalender</h1>
 		
 		<h2>Bekijk hier al onze activiteiten</h2>
+
 
 		<p>Hier vind je het volledig overzicht van onze activiteiten. Het is ook mogelijk om in te schrijven met de bijgevoegde formulieren.</p>
 		
