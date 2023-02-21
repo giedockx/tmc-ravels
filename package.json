@@ -14,7 +14,8 @@
 		"@astrojs/sitemap": "^1.0.1",
 		"astro": "^2.0.13",
 		"astro-navbar": "^1.1.5",
-		"astro-netlify-cms": "^0.5.3",
+		"astro-netlify-cms": "^0.0.1",
+		"markdown-to-jsx": "^7.1.9",
 		"netlify-identity-widget": "^1.9.2"
 	},
 	"devDependencies": {
