@@ -15,8 +15,20 @@ const { frontmatter } = Astro.props;
 
     <h1>{frontmatter.title} by {frontmatter.author}</h1>
     <!-- 2. Rendered HTML will be passed into the default slot. -->
+    <div class="artikel">
     <slot />
+  </div>
     <p>Written on: {frontmatter.date}</p>
   </body>
 </html>
 </Layout>
+
+<style>
+.artikel {
+  padding: 0rem;
+		max-width: 140ch;
+		margin: auto;
+		position:relative;
+}
+
+</style>

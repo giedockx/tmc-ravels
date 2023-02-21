@@ -1,9 +1,11 @@
 ---
+import { literal } from 'astro/zod';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+const allPosts = await Astro.glob('../pages/posts/*md');
+const pageTitle = "TMC Ravels | Wie zijn wij";
 ---
 
-<Layout title="TMC Ravels | Wie zijn wij?">
+<Layout title={pageTitle}>
 	<main>
 		<h1>TMC Ravels</h1>
 		<h1>Over onze club</h1>
@@ -12,9 +14,7 @@ import Card from '../components/Card.astro';
 		<p>Dit is een eerste test om de website in astro te bouwen voor de modelvliegclub. Voorlopig ziet het er zeer goed uit</p>
 		
 		<ul>
-			<li><a href="/posts/about/">Over de club</a></li>
-			<li><a href="/posts/post2/">2de post</a></li>
-			<li><a href="/posts/post3/">3de post</a></li>
+			{allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
 		</ul>
 
 	</main>
